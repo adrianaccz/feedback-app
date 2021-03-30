@@ -1,0 +1,32 @@
+GET http://localhost:4000/users HTTP/1.1
+###
+
+GET http://localhost:4000/users/605ce88eea68aa86dcc17350 HTTP/1.1
+
+###
+
+POST http://localhost:4000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Valerie",
+    "lastname": "Cordero",
+    "age": 31,
+    "email": "adriana@hotmail.com"
+}
+
+### UPDATE
+
+PUT http://localhost:4000/users/605ce88eea68aa86dcc17350 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "prueba update",
+    "lastname": "hola",
+    "age": 31,
+    "email": "adriana@hotmail.com"
+}
+
+### delete
+
+DELETE http://localhost:4000/users/605ce88eea68aa86dcc17350 HTTP/1.1
